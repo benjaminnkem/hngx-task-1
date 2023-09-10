@@ -108,6 +108,7 @@ main {
   border-radius: 3rem;
   overflow: hidden;
   position: relative;
+  max-height: 35rem;
 }
 
 .jumbo_img_con img {
@@ -132,11 +133,11 @@ main {
   font-weight: bold;
   user-select: none;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.461);
+  backdrop-filter: blur(8px);
 }
 
 .jumbo_img_con:hover .slack_img_info {
   opacity: 1;
-  backdrop-filter: blur(8px);
 }
 
 .jumbo-texts_con {
