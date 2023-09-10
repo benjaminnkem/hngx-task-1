@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,700;9..40,800&display=swap');
+
+:root {
+  --primaryWhite: #fff;
+  --primaryRed: #ff6969;
+  --primaryTextColor: #070707;
+
+  --secondaryOffWhite: #fff5e0;
+  --secondaryBlue: #141e46;
+  --secondaryRed: #bb2525;
+  --maxWidth: 1024px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryWhite);
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--secondaryOffWhite);
+  color: var(--primaryTextColor);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --secondaryOffWhite: #121212;
+    --primaryTextColor: #fff;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--maxWidth);
+  margin-inline: auto;
+  padding-block: 1rem;
+}
+
+nav div:first-of-type {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.profile_img_con {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px var(--secondaryRed) solid;
+}
+
+#nav_logo_img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.nav_links_con {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+main {
+  max-width: var(--maxWidth);
+  margin-inline: auto;
+}
+
+.jumbo {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.jumbo > img {
+  border-radius: 3rem;
+}
+
+.jumbo-texts_con {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slackName {
+  font-size: 2rem;
+  font-weight: 700;
+}
