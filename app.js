@@ -10,4 +10,4 @@ const updateValues = () => {
 
 updateValues(); // for initial updating
 
-setInterval(() => updateValues(), 1000); // updates every seconds
+setInterval(() => updateValues(), 10); // updates every seconds
