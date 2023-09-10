@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/app.js"></script>
     <title>Frontend Task 1 - benjaminnkem (HNGX)</title>
   </head>
   <body>
@@ -14,7 +15,7 @@
             <img
               src="/assets/images/slack_profile_image.png"
               alt="Benjamin Nkem"
-              data-testid="Benjamin Nkem"
+              data-testid="slackDisplayImage"
               width="100"
               height="100"
               id="nav_logo_img"
@@ -22,13 +23,13 @@
             />
           </div>
 
-          <span title="Slack Username">Benjamin Nkem</span>
+          <span title="Slack Username" data-testid="slackUserName">Benjamin Nkem</span>
         </div>
 
         <ul class="nav_links_con">
           <li>
-            <a href="https://github.com/benjaminnkem" target="_blank">
-              <img src="/assets/svgs/github-mark-white.svg" alt="Github Logo" width="20" height="20" />
+            <a href="https://github.com/benjaminnkem/hngx-task-1" target="_blank">
+              <img src="/assets/svgs/github-mark.svg" alt="Github Logo" width="20" height="20" />
             </a>
           </li>
           <li>
@@ -41,19 +42,42 @@
     </header>
 
     <main>
+      <section class="date_time_con">
+        <div>
+          <p id="dayOfTheWeek" data-testid="currentDayOfTheWeek">Monday</p>
+          <p data-testid="currentUTCTime" id="currentUTCTime"></p>
+        </div>
+      </section>
+
       <section class="jumbo">
-        <img
-          src="/assets/images/slack_profile_image.png"
-          alt="Benjamin Nkem"
-          data-testid="Benjamin Nkem"
-          width="300"
-          height="300"
-        />
+        <div class="jumbo_img_con">
+          <img
+            src="/assets/images/slack_profile_image.png"
+            alt="Benjamin Nkem"
+            data-testid="slackDisplayImage"
+            width="300"
+            height="300"
+            draggable="false"
+          />
+
+          <div class="slack_img_info">
+            <p>My Slack Profile Image</p>
+          </div>
+        </div>
 
         <div class="jumbo-texts_con">
           <div>
             <h1 data-testid="Benjamin Nkem" class="slackName">Benjamin Nkem</h1>
-            <p>Slack Username: <span>Benjamin Nkem</span></p>
+            <div id="my_details">
+              <p>Slack Username: <span data-testid="slackUserName">Benjamin Nkem</span></p>
+              <p>Track: <span data-testid="myTrack">Frontend 👨‍💻</span></p>
+              <p>
+                Github:
+                <a href="https://github.com/benjaminnkem/hngx-task-1" target="_blank" data-testid="“githubURL”"
+                  >HNGx Task 1</a
+                >
+              </p>
+            </div>
           </div>
         </div>
       </section>
